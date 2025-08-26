@@ -2,12 +2,13 @@
 // tipar los valores de los datos
 interface Props {
   title: string
+  company?: string
   description: string
   link?: string // lleva ? porque el link puede ser undefined
   date: string
 }
 // recuperar de astro props estos valores
-const { title, description, link, date } = Astro.props;
+const { title, company, description, link, date } = Astro.props;
 ---
 
 <div
@@ -15,7 +16,7 @@ const { title, description, link, date } = Astro.props;
 >
 </div>
 <h3 class="text-lg font-semibold text-[#8b63f7] mt-3">
-  {title}
+  {title}{company && (<span class="dark:text-white text-gray-900"> - </span><span class="text-[#f59e0b] text-sm">{company}</span>)}
 </h3>
 <time
   class="mb-1 text-sm font-normal leading-none text-gray-400"

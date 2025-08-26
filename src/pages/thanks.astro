@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ThemeToggle from "@/components/ThemeToggle.astro";
+import config from '../../astro.config.mjs';
+const base = config.base || '/';
 ---
 
 <Layout title="Gracias por tu mensaje" description="Mensaje enviado correctamente." hideNav={true}>
@@ -10,8 +12,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
       <h1 class="text-4xl sm:text-5xl font-bold text-[#8b63f7]">¡Gracias por tu mensaje!</h1>
       <p class="text-gray-700 dark:text-gray-300 text-lg">Te responderé lo antes posible.</p>
       <a 
-        href="/"
-        class="inline-block mt-4 px-6 py-3 rounded-md bg-[#8b63f7] text-white font-medium hover:bg-[#7451d4] transition"
+        href={base} class="inline-block mt-4 px-6 py-3 rounded-md bg-[#8b63f7] text-white font-medium hover:bg-[#7451d4] transition"
       >
         Volver al inicio
       </a>
