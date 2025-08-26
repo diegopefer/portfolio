@@ -49,6 +49,7 @@ const PROJECTS = [
     description: "Web informativa con sistema de reservas online, creado para potenciar la marca y centralizar la difusión de campus deportivos. Creada desde cero con WordPress y Elementor, con diseño responsive y estructura modular.",
     link: "https://panda4events.com",
     image: "projects/panda4events-project.webp",
+    alt: "Aplicación Panda4Events para gestión de eventos deportivos",
     tags: [TAGS.WORDPRESS, TAGS.ELEMENTOR],
   },
   {
@@ -56,6 +57,7 @@ const PROJECTS = [
     description: "Web destinada a mostrar la oferta formativa y novedades de la academia. Reconstruida desde cero con diseño responsive para modernizar su imagen, facilitar la gestión de contenidos y mejorar la experiencia de usuario. Desarrollada con CakePHP, Bootstrap y JavaScript, con integración básica de Moodle para formación online.",
     link: "http://cathedraformacion.es/",
     image: "projects/cathedraformacion-project.webp",
+    alt: "Sitio web de Cathedra Formación con plataforma educativa y servicios de formación online",
     tags: [TAGS.CAKEPHP, TAGS.BOOTSTRAP, TAGS.JAVASCRIPT, TAGS.MOODLE],
   },
   {
@@ -63,6 +65,7 @@ const PROJECTS = [
     description: "Aplicación web desarrollada como TFG para divulgar las investigaciones del grupo DAEIRA de la UVigo, centradas en análisis y reconocimiento de imágenes. Implementada desde cero con CakePHP, Bootstrap y JavaScript, con diseño responsive y estructura orientada a la difusión de contenido científico.",
     link: "http://lia.ei.uvigo.es/daeira/",
     image: "projects/daeira-project.webp",
+    alt: "Web del grupo DAEIRA para divulgar investigaciones en reconocimiento de imágenes",
     tags: [TAGS.CAKEPHP, TAGS.BOOTSTRAP, TAGS.JAVASCRIPT],
   },
 
@@ -71,11 +74,11 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image,alt, title, description, tags, link, github }) => (
       <article class="flex flex-col space-x-0 space-y-8 md:space-x-8 md:space-y-0 group md:flex-row">
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip  rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-              <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+              <img alt={alt} class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
 
           </div>
         </div>
