@@ -9,8 +9,22 @@ import MoodleIcon from "@/components/icons/Moodle.astro";
 import Link from "@/components/icons/Link.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import GitHub from "@/components/icons/GitHub.astro";
+import HTMLIcon from "@/components/icons/HTML.astro";
+import CSSIcon from "@/components/icons/CSS.astro";
+import AstroIcon from "@/components/icons/Astro.astro";
+import TailwindCSSIcon from "@/components/icons/TailwindCSS.astro";
 
 const TAGS = {
+  HTML: {
+    name: "HTML",
+    class: "bg-blue-100 text-[#21759B]",
+    icon: HTMLIcon
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-blue-100 text-[#21759B]",
+    icon: CSSIcon
+  },
   WORDPRESS: {
     name: "WordPress",
     class: "bg-blue-100 text-[#21759B]",
@@ -41,12 +55,31 @@ const TAGS = {
     class: "bg-orange-100 text-orange-700",
     icon: MoodleIcon
   },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-orange-100 text-orange-700",
+    icon: AstroIcon
+  },
+  TAILWINDCSS: {
+    name: "Tailwind CSS",
+    class: "bg-orange-100 text-orange-700",
+    icon: TailwindCSSIcon
+  },
 };
 
 const PROJECTS = [
   {
-    title: "Panda4Events - Web corporativa y sistema de reservas para campus deportivos",
-    description: "Web informativa con sistema de reservas online, creado para potenciar la marca y centralizar la difusión de campus deportivos. Creada desde cero con WordPress y Elementor, con diseño responsive y estructura modular.",
+    title: "Portfolio personal",
+    description: "Web personal destinada a presentar mi perfil profesional, desarrollada como proyecto práctico con tecnologías como Astro, HTML, CSS y Tailwind CSS. Diseño moderno, adaptable y fácil de mantener.",
+    link: "https://diegopefer.github.io/portfolio/",
+    github:"https://github.com/diegopefer",
+    image: "projects/portfolio-diego-pena.webp",
+    alt: "Portfolio web personal de Diego Pena",
+    tags: [TAGS.ASTRO,TAGS.HTML, TAGS.CSS,TAGS.TAILWINDCSS,TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Panda4Events - Web corporativa para gestión de eventos deportivos",
+    description: "Web informativa desarrollada en WordPress con Elementor, diseñada para reforzar la imagen corporativa y facilitar la difusión de campus deportivos.",
     link: "https://panda4events.com",
     image: "projects/panda4events-project.webp",
     alt: "Aplicación Panda4Events para gestión de eventos deportivos",
@@ -54,10 +87,10 @@ const PROJECTS = [
   },
   {
     title: "Cathedra Formación - Web académica informativa",
-    description: "Web destinada a mostrar la oferta formativa y novedades de la academia. Reconstruida desde cero con diseño responsive para modernizar su imagen, facilitar la gestión de contenidos y mejorar la experiencia de usuario. Desarrollada con CakePHP, Bootstrap y JavaScript, con integración básica de Moodle para formación online.",
+    description: "Web destinada a mostrar la oferta formativa y novedades de la academia. Reconstruida con CakePHP, Bootstrap y JavaScript y diseñada para facilitar la gestión de contenidos.",
     link: "http://cathedraformacion.es/",
     image: "projects/cathedraformacion-project.webp",
-    alt: "Sitio web de Cathedra Formación con plataforma educativa y servicios de formación online",
+    alt: "Sitio web de la academia Cathedra Formación",
     tags: [TAGS.CAKEPHP, TAGS.BOOTSTRAP, TAGS.JAVASCRIPT, TAGS.MOODLE],
   },
   {
