@@ -1,22 +1,31 @@
-# Porfolio de Diego Pena Ferreira
+# Portfolio de Diego Pena
 
-Este proyecto es la **nueva versión de mi portfolio personal**, desarrollada desde cero con [Astro](https://astro.build/) y [Tailwind CSS](https://tailwindcss.com/), con el objetivo de mejorar el diseño, la estructura del código y la experiencia de usuario. Sustituye por completo a la versión anterior del portfolio, alojada tambien en github bajo el nombre de **`old-portfolio`**. 
+Esta es la **nueva versión de mi portfolio personal**, desarrollada como práctica desde cero con [Astro] y [Tailwind CSS], con el objetivo de mostrar mis habilidades en desarrollo web moderno y frontend.
+Sustituye por completo a la versión anterior del portfolio, alojada tambien en github bajo como **old-portfolio**.
 
-## 🚀 Tecnologías utilizadas
+🔗 [Link al portfolio](https://diegopefer.github.io/portfolio/)
 
-- Astro
-- Tailwind CSS
-- JavaScript / HTML / Markdown
-- GitHub Pages para despliegue
-- FormSubmit para envío de mensajes
+## 🚀 Tecnologías principales
 
-## ✨ Características
+- Astro  
+- Tailwind CSS  
+- JavaScript / HTML / CSS  
+- Git / GitHub (control de versiones)  
+- GitHub Pages (despliegue)
 
-- 🌙 Modo oscuro/claro con almacenamiento de preferencia
-- ⚡ Transiciones suaves entre páginas con `ViewTransitions`
-- 📱 Diseño responsive
-- 💌 Formulario de contacto funcional con redirección a página de agradecimiento
-- 💡 Código limpio y organizado por componentes
+## ✨ Funcionalidades destacadas
 
+- 🌙 Modo oscuro/claro totalmente funcional
+- 📱 Diseño responsive optimizado para todos los dispositivos  
+- 💌 Formulario de contacto funcional con FormSubmit con redirección a página de agradecimiento
+- 💡 Código modular y organizado por componentes para fácil mantenimiento
+- 🖼 Optimización de imágenes y carga rápida de recursos  
+
+
+## 🗂 Estructura del proyecto
+
+- `src/components/` → componentes reutilizables  
+- `src/pages/` → páginas del portfolio  
+- `public/` → assets estáticos (imágenes, logos, iconos)
 
 
