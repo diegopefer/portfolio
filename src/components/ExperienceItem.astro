@@ -23,7 +23,7 @@ const { title, company, description, link, date } = Astro.props;
   >{date}</time
 >
 <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-300 text-pretty">
-  {description}
+  <p set:html={description} />
 </p>
 
 <!-- renderizado condicional (por si no hay enlace) -->
