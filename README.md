@@ -1,7 +1,7 @@
 # Portfolio de Diego Pena
 
 Esta es la **nueva versión de mi portfolio personal**, desarrollada como práctica desde cero con [Astro] y [Tailwind CSS], con el objetivo de mostrar mis habilidades en desarrollo web moderno y frontend.
-Sustituye por completo a la versión anterior del portfolio, alojada tambien en github bajo como **old-portfolio**.
+Sustituye por completo a la versión anterior del portfolio, alojada tambien en github como **old-portfolio**.
 
 🔗 [Link al portfolio](https://diegopefer.github.io/portfolio/)
 
